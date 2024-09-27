@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  vnc-server:
+    build: .
+    ports:
+      - "5910:5900"
+    environment:
+      - USER=topi
+      - RESOLUTION=800x480
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    restart: always
