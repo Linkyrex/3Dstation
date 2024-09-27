@@ -1,7 +1,7 @@
 services:
   vnc-server:
     build:
-      context: https://github.com/Linkyrex/3Dstation/blob/b3a6c6680bd89f4ddadfdd873b2eeb96504e6427/Dockerfile
+      context: https://raw.githubusercontent.com/Linkyrex/3Dstation/refs/heads/main/
       dockerfile: Dockerfile
     ports:
       - "5910:5900"
